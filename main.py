@@ -35,9 +35,7 @@ def export():
     jobs = db.get(word)
     if not jobs:
       raise Exception()
-    print(1)
     save_to_file(jobs)
-    print(2)
     return send_file("jobs.csv")
   except:
     return redirect("/")

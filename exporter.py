@@ -5,7 +5,5 @@ def save_to_file(jobs):
   writer = csv.writer(file)
   writer.writerow(["title", "company", "location", "link"])
   for job in jobs:
-    print(3)
     writer.writerow(list(job.values()))
-    print(4)
   return
